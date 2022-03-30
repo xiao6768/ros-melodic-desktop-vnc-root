@@ -2,7 +2,7 @@
 
 * Tested under ubuntu18.04 x86-64
 
-* dockerhub: 
+* dockerhub: <https://hub.docker.com/repository/docker/xiao6768/ros-melodic-desktop-u18.04-vnc-root> 
 * github: <https://github.com/xiao6768/ros-melodic-desktop-vnc-root>
 
 
@@ -25,8 +25,8 @@ Added：
 Download the vnc viewer client [here](https://www.realvnc.com/en/connect/download/viewer/macos/)
 
 #### Run the image (mind the tag is not 'latest')
-<!-- 1. `docker pull floodshao/ros-melodic-desktop-vnc:v1.0` or build your own image -->
-2. `docker run -it -p 5901:5901 -p 6901:6901 floodshao/ros-melodic-desktop-vnc:v1.0 /bin/bash`
+1. `docker pull xiao6768/ros-melodic-desktop-u18.04-vnc-root:latest` or build your own image
+2. `docker run -it -p 5901:5901 -p 6901:6901 floodshao/ros-melodic-desktop-vnc:v1.0 /bin/bash` , or you just run `./start_ros1_docker.sh` at repo root
 3. You can reference the [ubuntu-1604-vnc-desktop](https://hub.docker.com/r/consol/ubuntu-xfce-vnc/) for user modification or password modification.
 4. open vnc viewer client, type the server address <localhost:5901>, key in the password: **vncpassword**
 5. open the terminal and test gazebo
